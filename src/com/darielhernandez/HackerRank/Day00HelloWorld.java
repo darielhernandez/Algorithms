@@ -2,7 +2,7 @@ package com.darielhernandez.HackerRank;
 
 import java.util.Scanner;
 
-public class Day01HelloWorld {
+public class Day00HelloWorld {
         public static void main(String[] args) {
             // Create a Scanner object to read input from stdin.
             Scanner scan = new Scanner(System.in);
@@ -21,3 +21,16 @@ public class Day01HelloWorld {
             System.out.println(inputString);
         }
     }
+
+   public class Day05ForLoops{
+       public static void main(String[] args) throws IOException {
+           BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
+           int n = Integer.parseInt(bufferedReader.readLine().trim());
+           for (int i=1; i<=10; i++){
+               System.out.println(n+" x "+i+" = "+n*i);
+           }
+
+           bufferedReader.close();
+       }
+   }

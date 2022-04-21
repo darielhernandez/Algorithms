@@ -41,4 +41,23 @@ public class warmupChallengeApril12 {
         return area;
     }
 }
+
+public class ExistsANumberHigher {
+    public static boolean existsHigher(int[] arr, int n) {
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]>=n)
+                return true;
+        }
+        return false;
+    }
+}
+
+    public static boolean doubleLetters(String word) {
+        for (int i=0; i<word.length()-1; i++){
+            if(word.charAt(i)==word.charAt(i+1))
+                return true;
+        }
+        return false;
+    }
+}
    

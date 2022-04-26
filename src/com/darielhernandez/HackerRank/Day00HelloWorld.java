@@ -60,4 +60,11 @@ public class ExistsANumberHigher {
         return false;
     }
 }
+
+public static String reverse(final String str) {
+        Stringbuilder reverse= new Stringbuilder(str);
+        reverse.reverse();
+        return reverse.tostring()
+        }
+
    

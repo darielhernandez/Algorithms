@@ -66,5 +66,12 @@ public static String reverse(final String str) {
         reverse.reverse();
         return reverse.tostring()
         }
-
+public static String getWord(String left, String right) {
+        return left.substring(0,1).toUpperCase() + left.substring(1) + right;
+        }
+public static int programmers(int one, int two, int three) {
+        int min = Math.min(one, Math.min(two, three));
+        int max = Math.max(one, Math.max(two, three));
+        return max - min;
+        }
    

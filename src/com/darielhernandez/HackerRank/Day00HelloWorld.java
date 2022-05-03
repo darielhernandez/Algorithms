@@ -74,4 +74,21 @@ public static int programmers(int one, int two, int three) {
         int max = Math.max(one, Math.max(two, three));
         return max - min;
         }
+public static int[] calculateScores(String str) {
+        int countA = 0;
+        int countB = 0;
+        int countC = 0;
+
+        for(int i=0; i< str.length(); i++){
+        if(str.charAt(i)=='A'){
+        countA++;
+        }else if(str.charAt(i)== 'B'){
+        countB++;
+        }else if(str.charAt(i)== 'C'){
+        countC++;
+        }
+        }
+        int[] scores={countA, countB, countC};
+        return scores;
+        }
    

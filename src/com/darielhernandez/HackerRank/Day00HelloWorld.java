@@ -91,4 +91,13 @@ public static int[] calculateScores(String str) {
         int[] scores={countA, countB, countC};
         return scores;
         }
-   
+    public static boolean isAvgWhole(int[] arr) {
+        int avg=0;
+        for(int i= 0; i<arr.length; i++){
+            avg+=arr[i];
+        }if(avg % arr.length == 0){
+            return true;
+        }else if (avg % arr.length !=0){
+        }
+        return false;
+    }

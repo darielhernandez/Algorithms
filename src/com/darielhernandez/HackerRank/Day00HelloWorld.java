@@ -101,3 +101,23 @@ public static int[] calculateScores(String str) {
         }
         return false;
     }
+public static boolean getXO (String str) {
+        int countX = 0;
+        int countO = 0;
+        for (int i = 0; i < str.length(); i++) {
+        if(str.charAt(i) == 'X' || str.charAt(i) == 'x') {
+        countX++;
+        }
+        if (str.charAt(i) == 'O' || str.charAt(i) == 'o') {
+        countO++;
+        }
+        }
+
+        if (countX == countO) {
+        return true;
+        }
+        return false;
+        }
+
+
+

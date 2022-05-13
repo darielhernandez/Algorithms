@@ -128,3 +128,24 @@ public class Main {
 
 }
 
+    public static int countUnique(String s1, String s2) {
+
+        String combined= s1+ s2;
+        HashSet<Character> set = new HashSet<Character>();
+        for (int i=0; i < combined.length(); i++){
+            set.add(combined.charAt(i));
+        }
+        return set.size(  );
+    }
+
+    public static int firstVowel(String str) {
+        for(int i=0; i< str.length(); i++){
+            char vow= str.charAt(i);
+            if(vow =='a'||vow =='e'||vow =='i'||vow =='o'||vow=='u'){
+                return str.indexOf(vow);
+            }else if(vow =='A'||vow =='E'||vow =='I'||vow =='O'||vow =='U'){
+                return str.indexOf(vow);
+            }
+        }
+        return -1;
+    }

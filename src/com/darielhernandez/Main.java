@@ -149,3 +149,23 @@ public class Main {
         }
         return -1;
     }
+    public static String repeat(String str, int n) {
+        String newStr = "";
+        for(int i = 0; i < str.length(); i++){
+            char caracter = str.charAt(i);
+            for(int j = 0; j < n ; j++){
+                newStr = newStr + caracter;
+            }
+        }
+        return newStr;
+    }
+}
+public static int[] reverse(int[] arr) {
+        int[] rev= new int[arr.length];
+        for(int i=arr.length -1; i>=0; i--){
+        rev[i]=arr[arr.length-1-i];
+        }
+        return rev;
+        }
+
+
